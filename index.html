@@ -1,49 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
 <body>
-<header>
-    <meta charset="utf-8">
-    <title>My Website</title>
-</header>
-<main>
-    <header>
-        <h1>Sam Vossen</h1>
-    </header>
-        <p>I am a Junior Information Systems major at Elizabethtown College. I like scripting and working on my ✨passion projects✨</p>
 
-    <hr>
+  <header>
+    <p class="wordmark">samvossen<span class="cursor">_</span></p>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#achievements">achievements</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <h2>My Classes</h2>
-        <ol>
-            <li>CS 320: Web Development 🌐</li>
-            <li>CS 250: Foundations of AI + Data Science 🤖</li>
-            <li>CS 341: Software Engineering 🔧</li>
-            <li>ART 145: Digital Photography 📷</li>
-        </ol>
+  <main>
+
+    <section id="about" class="hero">
+      <p class="title">// about</p>
+      <h1>Sam Vossen</h1>
+      <p class="bio">Information Systems student interested in field-deployed IT - infrastructure and cybersecurity out in the field.</p>
+      <img src="images/me.jpeg" alt="Sam Vossen" class="portrait">
+      <p>
+        I'm a junior Information Systems major at Elizabethtown College,
+        concentrating in Cybersecurity with minors in
+        Criminal Justice and Forensic Studies. I'm interested in server
+        management, cybersecurity, data systems, and environmental
+        science.
+      </p>
+      <p>
+        I've built projects ranging from a 2D platformer in Godot to a
+        full home lab running on Proxmox. Outside of class I'm usually
+        reading, gaming, lifting, managing my aquarium, or messing
+        around with whatever project has my attention.
+      </p>
+      <p>
+        What I truly what to do with my career is field IT work. 
+        Preferably infrastructure and cybersecurity supporting environmental and
+        ocean science research. I want to be the tech backbone for
+        missions out in the wild, not in an office.
+      </p>
     </section>
 
-    <section>
-        <h2>My Favorite Books</h2>
-        <ol type="i">
-            <li>The Last Bookstore on Earth 📖 - <a link href="https://www.goodreads.com/book/show/214490415-the-last-bookstore-on-earth" target="_blank">Goodreads</a></li>
-            <li>Isles of the Emberdark 🏝️ - <a link href="https://www.goodreads.com/book/show/210300489-isles-of-the-emberdark" target="_blank">Goodreads</a></li>
-            <li>Dungeon Crawler Carl 🔥 - <a link href="https://www.goodreads.com/book/show/211721806-dungeon-crawler-carl" target="_blank">Goodreads</a></li>
-            <li>Artemis 🌑 - <a link href="https://www.goodreads.com/book/show/34928122-artemis" target="_blank">Goodreads</a></li>
-        </ol>
+    <section id="skills">
+      <p class="title">// skills</p>
+      <h2>What I work with</h2>
+
+      <h3 class="skills-group">Technologies</h3>
+      <ul class="chip-list">
+        <li><span class="chip">Python</span></li>
+        <li><span class="chip">Java</span></li>
+        <li><span class="chip">SQL</span></li>
+        <li><span class="chip">PHP</span></li>
+        <li><span class="chip">Bash</span></li>
+        <li><span class="chip">Git</span></li>
+        <li><span class="chip">HTML</span></li>
+        <li><span class="chip">Markdown</span></li>
+        <li><span class="chip">Ubuntu</span></li>
+        <li><span class="chip">Debian</span></li>
+        <li><span class="chip">Linux Mint</span></li>
+        <li><span class="chip">CLI Utilities</span></li>
+      </ul>
+
+      <h3 class="skills-group">Strengths</h3>
+      <ul class="chip-list">
+        <li><span class="chip">Troubleshooting</span></li>
+        <li><span class="chip">Problem-Solving</span></li>
+        <li><span class="chip">Communication</span></li>
+        <li><span class="chip">Persistence</span></li>
+        <li><span class="chip">Collaboration</span></li>
+      </ul>
     </section>
 
-    <section>
-        <h2>My Moods</h2>
-        <span>
-            Happy: <img src="images/happy.jpg" alt="Happy" width="300" height="300">
-            Sad: <img src="images/sad.jpg" alt="Sad" width="300" height="300">
-        </span>
-    </section>    
+    <section id="education">
+      <p class="title">// education</p>
+      <h2>Education</h2>
+      <dl class="course-list">
+        <dt>Elizabethtown College - August 2024 to May 2028</dt>
+        <dd>Bachelor of Information Systems, concentration in Cybersecurity,
+          minors in Criminal Justice and Forensic Studies. GPA: 3.86/4.00.
+          Dean's List: Fall 2024, Spring 2025, Fall 2025, Spring 2026.</dd>
 
-    <footer>
-        <p><b>This is a footer. 🦶</b></p>
-    </footer>
-</main>
+        <dt>Spring-Ford Area High School - August 2020 to June 2024</dt>
+        <dd>High School Diploma.</dd>
+      </dl>
+    </section>
+
+    <section id="experience">
+      <p class="title">// experience</p>
+      <h2>Work experience</h2>
+
+      <article class="job">
+        <h3>ITS Student Assistant <span class="tag">Elizabethtown College</span></h3>
+        <p><time datetime="2025-08">August 2025</time> - Present</p>
+        <p>Provide technical support to students, faculty, and staff via
+          in-person, phone, and email. Track support requests through a
+          ticketing system and maintain classroom technology alongside
+          the ITS team.</p>
+      </article>
+
+      <article class="job">
+        <h3>Giant Direct Shopper <span class="tag">Giant</span></h3>
+        <p><time datetime="2026-05">May 2026</time> - Present</p>
+        <p>Fulfill online grocery orders using a handheld scanning
+          system within tight per-order time windows, while managing
+          multiple concurrent orders in a fast-paced retail environment.</p>
+      </article>
+
+      <article class="job">
+        <h3>Server Assistant <span class="tag">Texas Roadhouse</span></h3>
+        <p><time datetime="2023-01">January 2023</time> - <time datetime="2025-12">December 2025</time></p>
+        <p>Supported servers by resetting tables and maintaining the
+          dining area, collaborating with the team to keep service
+          efficient during peak hours.</p>
+      </article>
+    </section>
+
+    <section id="projects">
+      <p class="title">// projects</p>
+      <h2>Things I've built</h2>
+
+      <article class="project">
+        <h3>Home Lab built off Proxmox <span class="tag">Debian • Bash • CLI • Networking</span></h3>
+        <p>A repurposed Dell OptiPlex turned into a full self-hosted
+          lab. With features like, cloud storage, remote access, and hardened VMs.
+          A self-hosted Nextcloud application, migrated into a virtualized environment
+          with 1TB passthrough storage and multi-target backup
+          retention, plus WireGuard remote access and automated health
+          alerting for disk and backup failures.</p>
+        <a href="https://github.com/Hydromoon4493" class="project-link" target="_blank">View repository →</a>
+      </article>
+
+      <article class="project">
+        <h3>It's As Shrimple As That <span class="tag">Godot • GDScript • Animation</span></h3>
+        <p>A 2D underwater exploration platformer built solo in Godot,
+          following an octopus through challenging underground caves.
+          Designed sprite animations, enemy AI behaviors, and collision
+          systems to keep gameplay smooth and stable.</p>
+        <a href="https://github.com/Hydromoon4493" class="project-link" target="_blank">View repository →</a>
+      </article>
+
+      <article class="project">
+        <h3>Currency Converter <span class="tag">Python • API</span></h3>
+        <p>A program that converts real-world and fantasy currencies
+          using live API data, with a clean interface and input
+          validation. Presented as the Spring 2025 Coding Challenge
+          demo.</p>
+        <a href="https://github.com/Hydromoon4493" class="project-link" target="_blank">View repository →</a>
+      </article>
+    </section>
+
+    <section id="achievements">
+      <p class="title">// achievements & involvement</p>
+      <h2>Achievements</h2>
+      <ul class="achievement-list">
+        <li><strong>Dean's List</strong> - Fall 2024, Spring 2025, Fall 2025, Spring 2026</li>
+        <li><strong>CTF Ethical Hacking Contest, 1st Place</strong> - Team Blue, zero flags stolen throughout the competition</li>
+        <li><strong>Volunteer, Appalachian Service Project</strong> - four summers repairing homes in low-income communities</li>
+        <li><strong>Spring-Ford Golden Rams Marching Band</strong> - four-year member</li>
+        <li><strong>Computer Science Club, Alpha Phi Sigma, Criminal Justice Club, Theater Club</strong> - Elizabethtown College</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <p class="title">// contact</p>
+      <h2>Let's talk</h2>
+      <p>Open to field-deployed IT, infrastructure, and cybersecurity
+        roles - especially anything supporting environmental or
+        ocean science work.</p>
+      <address>
+        Email: <a href="mailto:sam-jobs@jpsdomain.org">sam-jobs@jpsdomain.org</a><br>
+        GitHub: <a href="https://github.com/Hydromoon4493" target="_blank">github.com/Hydromoon4493</a><br>
+        LinkedIn: <a href="https://linkedin.com/in/samvossen42" target="_blank">linkedin.com/in/samvossen42</a><br>
+        Handshake: <a href="https://app.joinhandshake.com/profiles/samvossen42" target="_blank">app.joinhandshake.com/profiles/samvossen42</a>
+      </address>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built by Sam Vossen • last updated September 2026</p>
+  </footer>
+
 </body>
 </html>

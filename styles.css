@@ -1,0 +1,217 @@
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1B1F2A;
+  color: #EDEAE3;
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 0 24px 80px;
+}
+
+/* ---------- Layout shell ---------- */
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px 0 20px;
+  border-bottom: 1px solid #333B4D;
+}
+
+.wordmark {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-size: 16px;
+  color: #E3B23C;
+}
+
+.cursor {
+  color: #9AA0AE;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #9AA0AE;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+  color: #E3B23C;
+}
+
+/* ---------- Section rhythm ---------- */
+section {
+  padding: 48px 0;
+  border-bottom: 1px solid #333B4D;
+}
+
+.title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #E3B23C;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #C9C6BD;
+  max-width: 60ch;
+}
+
+.bio {
+  font-size: 20px;
+  color: #EDEAE3;
+  margin-bottom: 24px;
+}
+
+/* ---------- About ---------- */
+.portrait {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #E3B23C;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 12px 20px;
+}
+
+.hero p + p {
+  margin-top: 16px;
+}
+
+/* ---------- Skills chips (Flexbox) ---------- */
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #1B1F2A;
+  background-color: #E3B23C;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+/* ---------- Coursework ---------- */
+.course-list dt {
+  font-weight: 600;
+  color: #EDEAE3;
+  margin-top: 14px;
+}
+
+.course-list dd {
+  color: #9AA0AE;
+  margin-left: 0;
+}
+
+/* ---------- Projects (Flexbox column) ---------- */
+.project {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid #333B4D;
+  padding-left: 18px;
+  margin-bottom: 28px;
+  transition: border-color 0.2s ease;
+}
+
+.project:hover {
+  border-left-color: #E3B23C;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9AA0AE;
+}
+
+.project-link {
+  align-self: flex-start;
+  margin-top: 10px;
+  color: #E3B23C;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Achievements ---------- */
+.achievement-list {
+  list-style: none;
+}
+
+.achievement-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #333B4D;
+  color: #C9C6BD;
+}
+
+.achievement-list li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- Contact ---------- */
+address {
+  font-style: normal;
+  margin-top: 16px;
+  color: #C9C6BD;
+}
+
+address a {
+  color: #E3B23C;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding-top: 24px;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #666F82;
+}
